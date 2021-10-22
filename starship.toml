@@ -1,0 +1,22 @@
+add_newline = false
+
+[character]
+success_symbol = 'λ➜(bold)'
+error_symbol = 'λ➜(bold orange)'
+
+[line_break]
+disabled = true
+
+[directory]
+home_symbol = '仏'
+
+[cmd_duration]
+disabled = true
+
+[battery]
+disabled = true
+
+[git_status]
+ahead = "♯"
+behind = "♭"
+
