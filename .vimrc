@@ -7,7 +7,6 @@ set smartindent
 set nowrap
 set noswapfile
 set number relativenumber
-set nu rnu
 set smartcase
 set nobackup
 set undodir=~/.vim/undodir
@@ -108,3 +107,5 @@ nnoremap <leader>cc ^xx
 inoremap jj <ESC>j
 inoremap kk <ESC>k
 
+" Auto-run init script when saving a dotfile
+autocmd BufWritePost ~/dotfiles/* !bash init.sh

@@ -19,4 +19,3 @@ disabled = true
 [git_status]
 ahead = "♯"
 behind = "♭"
-
