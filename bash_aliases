@@ -44,8 +44,8 @@ alias gch="git config credential.helper 'cache --timeout=99999999'"
 alias jr='javac *.java && java Main'
 
 #aliases for vimrc and bashrc
-alias vrc='vim ~/dotfiles/.vimrc'
-alias brc='vim ~/dotfiles/.bashrc'
+alias vrc='vim ~/dotfiles/vimrc'
+alias brc='vim ~/dotfiles/bashrc'
 
 #LaTeX aliases
 alias lxc='rm *.log *.aux'
