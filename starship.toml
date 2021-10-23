@@ -19,3 +19,6 @@ disabled = true
 [git_status]
 ahead = "♯"
 behind = "♭"
+
+[git_branch]
+format = "[$symbol$branch]($style)"
