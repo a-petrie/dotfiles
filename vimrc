@@ -20,16 +20,14 @@ set autochdir
 " don't think this works, need to look into it some more
 set path+=**/*
 set wildmenu
-set termsize=11x0
+" set termsize=11x0
 
 " BEGIN PLUGINS
 call plug#begin('~/.vim/plugged')
-    Plug 'tpope/vim-fugtive'
+    Plug 'https://github.com/ackyshake/VimCompletesMe.git'
     Plug 'vim-airline/vim-airline'
-    Plug 'https://github.com/ycm-core/YouCompleteMe.git'
     Plug 'https://github.com/kien/ctrlp.vim.git'
     Plug 'https://github.com/neovimhaskell/haskell-vim.git'
-    Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
     Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
     Plug 'https://github.com/adelarsq/vim-matchit'    
     Plug 'https://github.com/tpope/vim-surround.git'
@@ -37,6 +35,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'chase/focuspoint-vim'
     Plug 'nikolvs/vim-sunbather'
     Plug 'morhetz/gruvbox'
+    " Plug 'https://github.com/ycm-core/YouCompleteMe.git'
+    " Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 call plug#end()
 
 colorscheme gruvbox
@@ -89,7 +89,7 @@ hi SpellLocal cterm=underline ctermfg=203 guifg=#ff5f5f
 hi SpellRare cterm=underline ctermfg=203 guifg=#ff5f5f
 
 " LINEWRAPPING FOR WRITING DOCUMENTS
-nnoremap <leader>w :set wrap linebreak<CR>
+nnoremap <leader>w :set wrap! linebreak!<CR>
 nnoremap <leader>2 :set tabstop=2 softtabstop=2 shiftwidth=2
 
 " WILDCARD STUFF
