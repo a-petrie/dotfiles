@@ -1,6 +1,10 @@
 #!/bin/bash/
 
-cp bashrc bash_aliases vimrc tmux.conf ~/
+for file in bashrc bash_aliases vimrc tmux.conf
+do
+  cp $file ~/.$file
+done
+
 cp starship.toml ~/.config/
 
 source bashrc
