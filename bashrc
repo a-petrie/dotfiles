@@ -26,6 +26,9 @@ o() {
 # Initialise starship command propmpt
 eval "$(starship init bash)"
 
+# Swap caps lock and escape
+eval "setxkbmap -option caps:swapescape"
+
 # Set random wallpaper
 nwp () {
   ls /usr/share/backgrounds | xargs -d"\n" shuf -e -n 1 | awk '{print  "file:///usr/share/backgrounds/" $0}' | xargs gsettings set org.gnome.desktop.background picture-uri
