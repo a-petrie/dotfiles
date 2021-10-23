@@ -2,7 +2,6 @@
 
 echo Alias name:
 read alias
-echo $aliasName
 
 echo Alias command:
 read command
