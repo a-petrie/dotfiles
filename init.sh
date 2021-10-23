@@ -5,3 +5,4 @@ cp starship.toml ~/.config/
 source .bashrc
 
 
+source .bash_aliases
