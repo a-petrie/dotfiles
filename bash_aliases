@@ -57,3 +57,4 @@ alias t="gcc -o test.o test.c && ./test.o && rm test.o"
 alias td="vi /home/allan/vimwiki/todo.wiki"
 alias dtf='cd ~/dotfiles'
 alias na='bash ~/dotfiles/newalias.sh'
+alias bkg='cd /usr/share/backgrounds/'
