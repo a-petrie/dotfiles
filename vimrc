@@ -33,6 +33,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'https://github.com/tpope/vim-surround.git'
     Plug 'https://github.com/vimwiki/vimwiki'
     Plug 'chase/focuspoint-vim'
+    Plug 'mattn/emmet-vim'
     Plug 'nikolvs/vim-sunbather'
     Plug 'morhetz/gruvbox'
     " Plug 'https://github.com/ycm-core/YouCompleteMe.git'
