@@ -13,8 +13,6 @@ ompt() {
   export OMP_NUM_THREADS=$1
 }
 
-alias sibu='ssh 2254840p@sibu.dcs.gla.ac.uk'
-
 med() {
   python ~/code/meditation_timer/meditate.py $1
 }
@@ -166,4 +164,4 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-alias ssh1='ssh 2254840p@ssh1.dcs.gla.ac.uk'
+

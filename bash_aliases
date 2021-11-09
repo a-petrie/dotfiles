@@ -2,6 +2,9 @@
 ############### My Aliases and Functions x ################################
 ###########################################################################
 
+alias ssh1='ssh 2254840p@ssh1.dcs.gla.ac.uk'
+alias sibu='ssh 2254840p@sibu.dcs.gla.ac.uk'
+
 alias jupyter='~/.local/bin/jupyter-notebook'
 alias dtp='cd ~/desktop'
 alias dwn='cd ~/Downloads'
