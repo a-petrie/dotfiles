@@ -13,6 +13,7 @@ set undodir=~/.vim/undodir
 set undofile
 set incsearch
 set splitbelow
+set splitright
 
 set autochdir
 
