@@ -21,6 +21,10 @@ o() {
   xdg-open $1
 }
 
+newbeat() {
+  echo $1 >> ~/music/freestyle-beats/.yturls
+}
+
 # Initialise starship command propmpt
 eval "$(starship init bash)"
 
