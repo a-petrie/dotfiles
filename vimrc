@@ -37,8 +37,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'mattn/emmet-vim'
     Plug 'nikolvs/vim-sunbather'
     Plug 'morhetz/gruvbox'
-    " Plug 'https://github.com/ycm-core/YouCompleteMe.git'
-    " Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 call plug#end()
 
 colorscheme gruvbox
