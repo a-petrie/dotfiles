@@ -1,11 +1,11 @@
 #plot fourier transform
 pft () {
-  python ~/l4_dissertation/soundfiles/plot_ft.py $1
+  python ~/code/audioutils/plot_ft.py $1
 }
 
 #plot wave
 pwv () {
-  python ~/l4_dissertation/soundfiles/pltwav.py $1
+  python ~/code/audioutils/pltwav.py $1
 }
 
 
