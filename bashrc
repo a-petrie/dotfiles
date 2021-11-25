@@ -29,7 +29,9 @@ newbeat() {
 eval "$(starship init bash)"
 
 # Swap caps lock and escape
-eval "setxkbmap -option caps:swapescape"
+if (cat /etc/os-release | awk -F "=" 'NR==1{ print $2 == "\"Ubuntu\"" }') then
+  eval "setxkbmap -option caps:swapescape"
+fi
 
 # Set random wallpaper
 nwp () {
