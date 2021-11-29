@@ -29,7 +29,7 @@ newbeat() {
 eval "$(starship init bash)"
 
 # Swap caps lock and escape
-if (cat /etc/os-release | awk -F "=" 'NR==1{ print $2 == "\"Ubuntu\"" }') then
+if (awk -F "=" 'NR==1{ print $2 == "\"Ubuntu\"" > "/dev/null"}' /etc/os-release) then
   eval "setxkbmap -option caps:swapescape"
 fi
 
