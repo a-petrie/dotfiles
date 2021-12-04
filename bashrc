@@ -1,11 +1,11 @@
 #plot fourier transform
 pft () {
-  python ~/code/audioutils/plot_ft.py $1
+  python3 ~/code/audioutils/plot_ft.py $1
 }
 
 #plot wave
 pwv () {
-  python ~/code/audioutils/pltwav.py $1
+  python3 ~/code/audioutils/pltwav.py $1
 }
 
 ompt() {
@@ -13,7 +13,7 @@ ompt() {
 }
 
 med() {
-  python ~/code/meditation_timer/meditate.py $1
+  python3 ~/code/meditation_timer/meditate.py $1
 }
 
 o() {
