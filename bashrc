@@ -8,7 +8,6 @@ pwv () {
   python ~/code/audioutils/pltwav.py $1
 }
 
-
 ompt() {
   export OMP_NUM_THREADS=$1
 }
@@ -25,11 +24,11 @@ newbeat() {
   echo $1 >> ~/music/freestyle-beats/.yturls
 }
 
-# Initialise starship command propmpt
+# Initialise starship command prompt
 eval "$(starship init bash)"
 
 # Swap caps lock and escape
-if (awk -F "=" 'NR==1{ print $2 == "\"Ubuntu\"" > "/dev/null"}' /etc/os-release) then
+if [[ $(awk -F "=" 'NR==1{ print $2 == "\"Ubuntu\""}' /etc/os-release) == 1 ]]; then
   eval "setxkbmap -option caps:swapescape"
 fi
 
