@@ -20,7 +20,7 @@ alias lsd='ls | grep ".*([0-9]*)\..*"'
 alias rmd='ls | grep ".*([0-9]*)\..*" | xargs -d"\n" rm'
 
 #l4_dissertation/lv2 related aliases
-alias diss='cd ~/l4_dissertation'
+alias diss='cd ~/l5_dissertation'
 alias dco='cd ~/l4_dissertation/src'
 alias dsf='cd ~/l4_dissertation/soundfiles'
 alias plugins='lv2file --list'
