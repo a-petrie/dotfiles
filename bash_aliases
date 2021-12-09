@@ -61,8 +61,9 @@ alias nt="cp ~/code/templates/c/test.c . && vi test.c"
 alias t="gcc -o test.o test.c && ./test.o && rm test.o"
 
 alias na='bash ~/dotfiles/newalias.sh'
-alias sa='source .bashrc .bash_aliases .bash_profile'
+alias sa='source ~/.bashrc ~/.bash_aliases ~/.bash_profile'
 alias gen='cd ~/l5_dissertation/code_generation'
 alias dat='cd ~/l5_dissertation/data'
 alias rep='cd ~/l5_dissertation/interim_report/'
 alias zot='cd ~/programs/Zotero_linux-x86_64/ && ./zotero'
+alias dtfr='cd ~/dotfiles && git pull && bash init.sh'
