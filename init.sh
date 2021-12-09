@@ -1,6 +1,6 @@
 #!/bin/bash/
 
-for file in bashrc bash_aliases bash_profile vimrc tmux.conf
+for file in bashrc bash_aliases bash_profile vimrc tmux.conf gitconfig
 do
   cp $file ~/.$file
 done
