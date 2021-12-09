@@ -1,0 +1,13 @@
+[user]
+	email = allantpetrie@googlemail.com
+	name = a-petrie
+[http]
+	postBuffer = 10485760000
+[core]
+	editor = vim
+[alias]
+	c = commit
+  a = add
+  s = status
+  d = diff
+  ds = diff --staged
