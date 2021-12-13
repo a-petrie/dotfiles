@@ -109,3 +109,10 @@ inoremap kk <ESC>k
 
 " Auto-run init script when saving a dotfile
 autocmd BufWritePost ~/dotfiles/* !bash init.sh
+
+" LaTeX snippets TODO: fix so these only work in .tex files
+inoremap cite \cite{}<ESC>i
+inoremap sce \section{}<ESC>i
+inoremap ssce \subsection{}<ESC>i
+inoremap sssce \subsubsection{}<ESC>i
+inoremap fge \begin{figure}<CR><TAB>\includegraphics{<++>}<CR><TAB>\label{fig:<++>}<CR><TAB>\caption{<++>}<CR>\end{figure}
