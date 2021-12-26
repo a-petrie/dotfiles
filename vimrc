@@ -111,8 +111,9 @@ inoremap kk <ESC>k
 autocmd BufWritePost ~/dotfiles/* !bash init.sh
 
 " LaTeX snippets TODO: fix so these only work in .tex files
-inoremap cite \cite{}<ESC>i
-inoremap sce \section{}<ESC>i
-inoremap ssce \subsection{}<ESC>i
-inoremap sssce \subsubsection{}<ESC>i
-inoremap fge \begin{figure}<CR><TAB>\includegraphics{<++>}<CR><TAB>\label{fig:<++>}<CR><TAB>\caption{<++>}<CR>\end{figure}
+inoremap ;c \cite{}<ESC>i
+inoremap ;s \section{}<ESC>i
+inoremap ;ss \subsection{}<ESC>i
+inoremap ;sss \subsubsection{}<ESC>i
+inoremap ;f \begin{figure}<CR><TAB>\includegraphics{<++>}<CR><TAB>\label{fig:<++>}<CR><TAB>\caption{<++>}<CR>\end{figure}
+
