@@ -37,6 +37,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'mattn/emmet-vim'
     Plug 'nikolvs/vim-sunbather'
     Plug 'morhetz/gruvbox'
+    Plug 'git@github.com:chrisbra/Colorizer.git'
 call plug#end()
 
 colorscheme gruvbox
