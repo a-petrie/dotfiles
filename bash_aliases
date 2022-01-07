@@ -39,7 +39,7 @@ alias pmem='valgrind lv2file -i ~/l4_dissertation/soundfiles/drum_roll_y.wav -o 
 alias ref='xdg-open ~/l4_dissertation/soundfiles/piano.wav'
 
 #launch vimwiki
-alias vw='vi ~/vimwiki/index.wiki'
+alias vw='vim ~/vimwiki/index.wiki'
 
 #git aliases TODO: move these to separate git config style and alias there
 alias gs='git status'
@@ -50,14 +50,14 @@ alias gch="git config credential.helper 'cache --timeout=99999999'"
 alias jr='javac *.java && java Main'
 
 #aliases for vimrc and bashrc
-alias vrc='vi ~/dotfiles/vimrc'
-alias brc='vi ~/dotfiles/bashrc'
-alias td="vi /home/allan/vimwiki/todo.wiki"
+alias vrc='vim ~/dotfiles/vimrc'
+alias brc='vim ~/dotfiles/bashrc'
+alias td="vim /home/allan/vimwiki/todo.wiki"
 
 #LaTeX aliases
 alias lxc='rm *.log *.aux'
 
-alias nt="cp ~/code/templates/c/test.c . && vi test.c"
+alias nt="cp ~/code/templates/c/test.c . && vim test.c"
 alias t="gcc -o test.o test.c && ./test.o && rm test.o"
 
 alias na='bash ~/dotfiles/newalias.sh'
@@ -67,8 +67,8 @@ alias dat='cd ~/l5_dissertation/data'
 alias rep='cd ~/l5_dissertation/interim_report/'
 alias zot='cd ~/programs/Zotero_linux-x86_64/ && ./zotero'
 alias dtfr='cd ~/dotfiles && git pull && bash init.sh'
-alias wrep='vi ~/l5_dissertation/interim_report/mprop.tex'
-alias aliases='vi ~/dotfiles/bash_aliases'
+alias wrep='vim ~/l5_dissertation/interim_report/mprop.tex'
+alias aliases='vim ~/dotfiles/bash_aliases'
 alias sum='cd ~/l5_dissertation/lit_review/paper_summaries'
 alias wpaper='nitrogen /usr/share/backgrounds/'
 alias rec='cd ~/l5_dissertation/sc_code/recording_test'
