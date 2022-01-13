@@ -25,7 +25,8 @@ set wildmenu
 
 " BEGIN PLUGINS
 call plug#begin('~/.vim/plugged')
-    Plug 'https://github.com/ackyshake/VimCompletesMe.git'
+    " Plug 'https://github.com/ackyshake/VimCompletesMe.git'
+    Plug 'https://github.com/ycm-core/YouCompleteMe.git'
     Plug 'vim-airline/vim-airline'
     Plug 'https://github.com/kien/ctrlp.vim.git'
     Plug 'https://github.com/neovimhaskell/haskell-vim.git'
