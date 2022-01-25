@@ -2,12 +2,24 @@
 	email = allantpetrie@googlemail.com
 	name = a-petrie
 [http]
-	postBuffer = 10485760000
+	postBuffer = 5m
 [core]
 	editor = vim
+  packedGitLimit = 128m
+  packedGitWindowSize = 128m
+
 [alias]
 	c = commit
   a = add
   s = status
   d = diff
   ds = diff --staged
+[core]
+
+[pack]
+  deltaCacheSize = 128m
+  packSizeLimit = 128m
+  windowMemory = 128m
+
+[http]
+  postbuffer = 5m
