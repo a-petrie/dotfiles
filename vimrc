@@ -89,6 +89,7 @@ nnoremap <leader>o :setlocal spell! spelllang=en_gb<CR>
 hi SpellBad cterm=underline ctermfg=203 guifg=#ff5f5f
 hi SpellLocal cterm=underline ctermfg=203 guifg=#ff5f5f
 hi SpellRare cterm=underline ctermfg=203 guifg=#ff5f5f
+nnoremap zz 1z=
 
 " LINEWRAPPING FOR WRITING DOCUMENTS
 nnoremap <leader>w :set wrap! linebreak!<CR>
