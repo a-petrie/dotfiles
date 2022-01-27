@@ -23,3 +23,6 @@
 
 [http]
   postbuffer = 5m
+
+[init]
+  defaultBranch = main
