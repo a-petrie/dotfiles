@@ -48,6 +48,11 @@ tnb () {
   
 export PATH="$HOME/.local:$PATH"
 
+# pip virtualenv stuff
+export WORKON_HOME=$HOME/.virtualenvs
+VIRTUALENVWRAPPER_PYTHON=$(which python3)
+source $HOME/.local/bin/virtualenvwrapper.sh
+
 ######################################################################
 ################# PREDIFINED STUFF ###################################
 ######################################################################
