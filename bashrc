@@ -27,6 +27,7 @@ newbeat() {
 # Initialise starship command prompt
 eval "$(starship init bash)"
 
+# TODO: set up virtualenv on laptop
 # Swap caps lock and escape
 if [[ $(awk -F "=" 'NR==1{ print $2 == "\"Ubuntu\""}' /etc/os-release) == 1 ]]; then
   eval "setxkbmap -option caps:swapescape"

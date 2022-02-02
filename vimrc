@@ -14,6 +14,7 @@ set undofile
 set incsearch
 set splitbelow
 set splitright
+"set filetype
 
 set autochdir
 
@@ -105,18 +106,10 @@ nnoremap <leader>c I//<ESC>
 nnoremap <leader>cc ^xx
 
 " Exist out of insert mode with double tap of direction
-" leaving out l because lots of words do have double l
-" would be irksome
 inoremap jj <ESC>j
 inoremap kk <ESC>k
 
 " Auto-run init script when saving a dotfile
 autocmd BufWritePost ~/dotfiles/* !bash init.sh
 
-" LaTeX snippets TODO: fix so these only work in .tex files
-inoremap ;c \cite{}<ESC>i
-inoremap ;s \section{}<ESC>i
-inoremap ;ss \subsection{}<ESC>i
-inoremap ;sss \subsubsection{}<ESC>i
-inoremap ;f \begin{figure}<CR><TAB>\includegraphics{<++>}<CR><TAB>\label{fig:<++>}<CR><TAB>\caption{<++>}<CR>\end{figure}
 

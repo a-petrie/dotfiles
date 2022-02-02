@@ -6,6 +6,7 @@ do
 done
 
 cp starship.toml ~/.config/
+cp ftplugin/* ~/.vim/ftplugin 
 
 source ~/.bashrc
 source ~/.bash_aliases
