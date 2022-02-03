@@ -28,7 +28,7 @@ alias dtfr='cd ~/dotfiles && git pull && bash init.sh'
 alias vrc='vim ~/dotfiles/vimrc'
 alias brc='vim ~/dotfiles/bashrc'
 alias aliases='vim ~/dotfiles/bash_aliases'
-alias na='bash ~/dotfiles/newalias.sh && cp ~/dotfiles/bash_aliases ~/.bash_aliases && source ~/.bash_aliases'
+alias na='bash ~/dotfiles/newalias.sh && cp ~/dotfiles/bash_aliases ~/.bash_aliases'
 alias sa='source ~/.bashrc ~/.bash_aliases ~/.bash_profile'
 
 # list and delete duplicate files
@@ -80,3 +80,4 @@ alias lxc='rm *.log *.aux'
 alias nt="cp ~/code/templates/c/test.c . && vim test.c"
 alias t="gcc -o test.o test.c && ./test.o && rm test.o"
 
+alias sse='cd ~/uni/sse'
