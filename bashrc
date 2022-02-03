@@ -24,6 +24,12 @@ newbeat() {
   echo $1 >> ~/music/freestyle-beats/.yturls
 }
 
+newlv2() {
+  bash ~/code/templates/lv2/newLV2.sh $1 $2
+  cd $1
+  ls
+}
+
 # Initialise starship command prompt
 eval "$(starship init bash)"
 
