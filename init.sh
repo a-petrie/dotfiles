@@ -6,6 +6,7 @@ do
 done
 
 cp starship.toml ~/.config/
+mkdir -p ~/.vim/ftplugin
 cp ftplugin/* ~/.vim/ftplugin 
 
 source ~/.bashrc
