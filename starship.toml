@@ -14,7 +14,7 @@ home_symbol = '仏'
 disabled = true
 
 [battery]
-disabled = true
+disabled = true 
 
 [git_status]
 ahead = "♯"
