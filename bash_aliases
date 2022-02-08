@@ -49,16 +49,6 @@ alias rec='cd ~/l5_dissertation/sc_code/recording_test'
 alias asep='cd ~/uni/asep/asep-coursework-2021'
 alias wad='cd ~/tutoring/wad2/rango/tango_with_django_project'
 alias runserver='python3 /home/allan/tutoring/wad2/rango/tango_with_django_project/manage.py runserver'
-
-# testing plugin with different soundfiles
-alias tpi='rmk && lv2file -i ~/l4_dissertation/soundfiles/piano.wav -o test.wav http://example.org/pPlugin/envDelay && xdg-open test.wav'
-alias tsn='rmk && lv2file -i ~/l4_dissertation/soundfiles/shortsine440Hz.wav -o test.wav http://example.org/pPlugin/envDelay && xdg-open test.wav'
-alias tno='rmk && lv2file -i ~/l4_dissertation/soundfiles/noise.wav -o test.wav http://example.org/pPlugin/envDelay && xdg-open test.wav'
-alias tdr='rmk && lv2file -i ~/l4_dissertation/soundfiles/drum_roll_y.wav -o test.wav http://example.org/pPlugin/envDelay && xdg-open test.wav'
-alias tpip='lv2file -n http://example.org/pPlugin/envDelay'
-alias adb='cd ~/programs/ardour/gtk2_ardour && ./ardbg'
-alias pmem='valgrind lv2file -i ~/l4_dissertation/soundfiles/drum_roll_y.wav -o ~/l4_dissertation/soundfiles/test.wav http://example.org/pPlugin/envDelay'
-alias ref='xdg-open ~/l4_dissertation/soundfiles/piano.wav'
 alias plugins='lv2file --list'
 alias rmk='make && sudo make install'
 
@@ -80,4 +70,3 @@ alias lxc='rm *.log *.aux'
 alias nt="cp ~/code/templates/c/test.c . && vim test.c"
 alias t="gcc -o test.o test.c && ./test.o && rm test.o"
 
-alias sse='cd ~/uni/sse'
