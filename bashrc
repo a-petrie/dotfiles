@@ -24,6 +24,11 @@ newbeat() {
   echo $1 >> ~/music/freestyle-beats/.yturls
 }
 
+killp() {
+  pgrep $1
+  pgrep $1 | xargs -d"\n" kill
+}
+
 newlv2() {
   bash ~/code/templates/lv2/newLV2.sh $1 $2
   cd $1

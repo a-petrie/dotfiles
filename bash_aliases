@@ -70,3 +70,5 @@ alias lxc='rm *.log *.aux'
 alias nt="cp ~/code/templates/c/test.c . && vim test.c"
 alias t="gcc -o test.o test.c && ./test.o && rm test.o"
 
+alias rgn='python3 /home/allan/l5_dissertation/src/Application/mvp.py code_example/example.scd'
+alias cand='cat ~/l5_dissertation/src/data/candidates/candidates.scd'
