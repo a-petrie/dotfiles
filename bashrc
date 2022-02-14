@@ -24,7 +24,7 @@ newbeat() {
   echo $1 >> ~/music/freestyle-beats/.yturls
 }
 
-killp() {
+pk() {
   pgrep $1
   pgrep $1 | xargs -d"\n" kill
 }
