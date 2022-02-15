@@ -72,3 +72,4 @@ alias t="gcc -o test.o test.c && ./test.o && rm test.o"
 
 alias rgn='python3 /home/allan/l5_dissertation/src/Application/mvp.py code_example/example.scd'
 alias cand='cat ~/l5_dissertation/src/data/candidates/candidates.scd'
+alias uni='cd ~/uni/uni'

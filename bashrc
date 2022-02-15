@@ -35,6 +35,12 @@ newlv2() {
   ls
 }
 
+# move all wavs in candidates dir to specified directory
+mvc() {
+  mkdir -p $1
+  mv ~/l5_dissertation/src/data/candidates/*.wav $1
+}
+
 # Initialise starship command prompt
 eval "$(starship init bash)"
 
