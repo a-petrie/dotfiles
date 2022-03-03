@@ -44,8 +44,12 @@ alias rep='cd ~/l5_dissertation/interim_report/'
 alias wrep='vim ~/l5_dissertation/interim_report/mprop.tex'
 alias sum='cd ~/l5_dissertation/lit_review/paper_summaries'
 alias rec='cd ~/l5_dissertation/sc_code/recording_test'
+alias rgn='python3 /home/allan/l5_dissertation/src/Application/mvp.py code_example/example.scd'
+alias cand='cat ~/l5_dissertation/src/data/candidates/candidates.scd'
 
 # uni directory shortcuts
+alias uni='cd ~/uni/uni'
+alias sse='cd ~/uni/uni/sse'
 alias asep='cd ~/uni/asep/asep-coursework-2021'
 alias wad='cd ~/tutoring/wad2/rango/tango_with_django_project'
 alias runserver='python3 /home/allan/tutoring/wad2/rango/tango_with_django_project/manage.py runserver'
@@ -70,9 +74,6 @@ alias lxc='rm *.log *.aux'
 alias nt="cp ~/code/templates/c/test.c . && vim test.c"
 alias t="gcc -o test.o test.c && ./test.o && rm test.o"
 
-alias rgn='python3 /home/allan/l5_dissertation/src/Application/mvp.py code_example/example.scd'
-alias cand='cat ~/l5_dissertation/src/data/candidates/candidates.scd'
-alias uni='cd ~/uni/uni'
 alias temp='cp candidates.scd temp.scd'
 alias utemp='mv temp.scd candidates.scd'
 alias exp='cd ~/l5_dissertation/src/similarity_experiment && python3 runExperiment.py'
