@@ -41,6 +41,9 @@ mvc() {
   mv ~/l5_dissertation/src/data/candidates/*.wav $1
 }
 
+pdb() {
+  python3 -m pdb $1
+}
 # Initialise starship command prompt
 eval "$(starship init bash)"
 
