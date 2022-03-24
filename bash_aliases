@@ -38,7 +38,7 @@ alias rmd='ls | grep ".*([0-9]*)\..*" | xargs -d"\n" rm'
 # dissertation directory aliases
 alias diss='cd ~/l5_dissertation'
 alias gen='cd ~/l5_dissertation/src/Application'
-alias sim='cd ~/l5_dissertation/src/similarity_experiment'
+alias sim='cd ~/l5_dissertation/src/AudioAnalysis'
 alias dat='cd ~/l5_dissertation/data'
 alias rep='cd ~/l5_dissertation/interim_report/'
 alias wrep='vim ~/l5_dissertation/interim_report/mprop.tex'
@@ -76,6 +76,7 @@ alias t="gcc -o test.o test.c && ./test.o && rm test.o"
 
 alias temp='cp candidates.scd temp.scd'
 alias utemp='mv temp.scd candidates.scd'
-alias exp='cd ~/l5_dissertation/src/similarity_experiment && python3 runExperiment.py'
+alias exp='cd ~/l5_dissertation/src/AudioAnalysis && python3 runExperiment.py'
 alias suge='cd ~/uni/uni/suge'
 alias sse='cd ~/uni/uni/sse/'
+alias trn='cd ~/l5_dissertation/src/Training/'
