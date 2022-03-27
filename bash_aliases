@@ -1,9 +1,11 @@
-###########################################################################
-############### My Aliases and Functions x ################################
-###########################################################################
-
-alias ssh1='ssh 2254840p@ssh1.dcs.gla.ac.uk'
-alias sibu='ssh 2254840p@sibu.dcs.gla.ac.uk'
+#|-----------------------------------------------------------------|
+#|         _ _             _             _ _                       |
+#|    __ _| | | __ _ _ __ ( )___    __ _| (_) __ _ ___  ___  ___   |
+#|   / _` | | |/ _` | '_ \|// __|  / _` | | |/ _` / __|/ _ \/ __|  |
+#|  | (_| | | | (_| | | | | \__ \ | (_| | | | (_| \__ \  __/\__ \  |
+#|   \__,_|_|_|\__,_|_| |_| |___/  \__,_|_|_|\__,_|___/\___||___/  |
+#|                                                                 |
+#|-----------------------------------------------------------------|
 
 # shortcuts
 alias dtp='cd ~/desktop'
@@ -16,7 +18,6 @@ alias bkg='cd /usr/share/backgrounds/'
 alias lv2='cd /usr/lib/lv2/'
 
 # applications
-alias jupyter='~/.local/bin/jupyter-notebook'
 alias chrome='google-chrome'
 alias r='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 alias zot='cd ~/programs/Zotero_linux-x86_64/ && ./zotero'
@@ -40,44 +41,29 @@ alias diss='cd ~/l5_dissertation'
 alias gen='cd ~/l5_dissertation/src/Application'
 alias sim='cd ~/l5_dissertation/src/AudioAnalysis'
 alias dat='cd ~/l5_dissertation/data'
-alias rep='cd ~/l5_dissertation/interim_report/'
-alias wrep='vim ~/l5_dissertation/interim_report/mprop.tex'
-alias sum='cd ~/l5_dissertation/lit_review/paper_summaries'
-alias rec='cd ~/l5_dissertation/sc_code/recording_test'
 alias rgn='python3 /home/allan/l5_dissertation/src/Application/mvp.py code_example/example.scd'
-alias cand='cat ~/l5_dissertation/src/data/candidates/candidates.scd'
+alias sse='cd ~/uni/uni/sse/'
+alias trn='cd ~/l5_dissertation/src/Training/'
+alias exp='cd ~/l5_dissertation/src/AudioAnalysis && python3 runExperiment.py'
 
 # uni directory shortcuts
 alias uni='cd ~/uni/uni'
 alias sse='cd ~/uni/uni/sse'
+alias suge='cd ~/uni/uni/suge'
 alias asep='cd ~/uni/asep/asep-coursework-2021'
 alias wad='cd ~/tutoring/wad2/rango/tango_with_django_project'
 alias runserver='python3 /home/allan/tutoring/wad2/rango/tango_with_django_project/manage.py runserver'
-alias plugins='lv2file --list'
-alias rmk='make && sudo make install'
 
 # launch vimwiki
 alias vw='vim ~/vimwiki/index.wiki'
 alias td="vim /home/allan/vimwiki/todo.wiki"
-
-# git aliases TODO: move these to separate git config style and alias there
-alias gs='git status'
-alias gb='git branch'
-alias gch="git config credential.helper 'cache --timeout=99999999'"
-
-# java aliases
-alias jr='javac *.java && java Main'
 
 #LaTeX aliases
 alias lxc='rm *.log *.aux'
 
 alias nt="cp ~/code/templates/c/test.c . && vim test.c"
 alias t="gcc -o test.o test.c && ./test.o && rm test.o"
+alias plugins='lv2file --list'
+alias rmk='make && sudo make install'
 
-alias temp='cp candidates.scd temp.scd'
-alias utemp='mv temp.scd candidates.scd'
-alias exp='cd ~/l5_dissertation/src/AudioAnalysis && python3 runExperiment.py'
-alias suge='cd ~/uni/uni/suge'
-alias sse='cd ~/uni/uni/sse/'
-alias trn='cd ~/l5_dissertation/src/Training/'
-alias utils='cp ~/code/imgutils/utils.py .'
+alias img='cp ~/code/imgutils/utils.py . && python3'
