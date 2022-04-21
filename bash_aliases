@@ -37,7 +37,7 @@ alias lsd='ls | grep ".*([0-9]*)\..*"'
 alias rmd='ls | grep ".*([0-9]*)\..*" | xargs -d"\n" rm'
 
 # dissertation directory aliases
-alias diss='cd ~/l5_dissertation'
+alias diss='cd ~/l5_dissertation && cat todos.md'
 alias gen='cd ~/l5_dissertation/src/Application'
 alias sim='cd ~/l5_dissertation/src/AudioAnalysis'
 alias dat='cd ~/l5_dissertation/data'
@@ -67,3 +67,6 @@ alias plugins='lv2file --list'
 alias rmk='make && sudo make install'
 
 alias img='cp ~/code/imgutils/utils.py . && python3'
+alias di='cd ~/l5_dissertation/dissertation/latex'
+alias plt='cd ~/l5_dissertation/src/plots/'
+alias mark='cd ~/tutoring/wad2_marking/'

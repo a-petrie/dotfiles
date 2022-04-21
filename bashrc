@@ -7,25 +7,11 @@
 # |                                                                    |
 # |--------------------------------------------------------------------|
 
-#plot fourier transform
-pft () {
-  python3 ~/code/audio/python/plot_ft.py $1
+pf () {
+  python3 ~/l5_dissertation/src/plots/plot_fit.py $1
 }
 
-#plot wave
-pwv () {
-  python3 ~/code/audio/python/pltwav.py $1
-}
-
-ompt() {
-  export OMP_NUM_THREADS=$1
-}
-
-med() {
-  python3 ~/code/meditation_timer/meditate.py $1
-}
-
-o() {
+xdg() {
   xdg-open $1
 }
 
@@ -44,24 +30,10 @@ newlv2() {
   ls
 }
 
-# move all wavs in candidates dir to specified directory
-mvc() {
-  mkdir -p $1
-  mv ~/l5_dissertation/src/data/candidates/*.wav $1
-}
-
 pdb() {
   python3 -m pdb $1
 }
-# Initialise starship command prompt
-eval "$(starship init bash)"
 
-# Swap caps lock and escape
-if [[ $(awk -F "=" 'NR==1{ print $2 == "\"Ubuntu\""}' /etc/os-release) == 1 ]]; then
-  eval "setxkbmap -option caps:swapescape"
-fi
-
-# Set random wallpaper
 nwp () {
   ls /usr/share/backgrounds | xargs -d"\n" shuf -e -n 1 | awk '{print  "file:///usr/share/backgrounds/" $0}' | xargs gsettings set org.gnome.desktop.background picture-uri
 }
@@ -74,8 +46,21 @@ nb () {
 tnb () {
   echo "!/bin/bash" >> $1.sh
 }
-  
+
 export PATH="$HOME/.local:$PATH"
+
+eval "$(starship init bash)"
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+# Swap caps lock and escape
+if [[ $(awk -F "=" 'NR==1{ print $2 == "\"Ubuntu\""}' /etc/os-release) == 1 ]]; then
+  eval "setxkbmap -option caps:swapescape"
+fi
+
+  
 
 # pip virtualenv stuff
 export WORKON_HOME=$HOME/.virtualenvs
@@ -184,14 +169,6 @@ alias sl='ls'
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
