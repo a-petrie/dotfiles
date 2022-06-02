@@ -33,9 +33,15 @@ set path+=**/*
 set wildmenu
 " set termsize=11x0
 
+" auto-install vim plugged if not already installed
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 " BEGIN PLUGINS
 call plug#begin('~/.vim/plugged')
-    " Plug 'https://github.com/ackyshake/VimCompletesMe.git'
     Plug 'https://github.com/ycm-core/YouCompleteMe.git'
     Plug 'vim-airline/vim-airline'
     Plug 'https://github.com/kien/ctrlp.vim.git'
