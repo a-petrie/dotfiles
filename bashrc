@@ -23,6 +23,10 @@ newbeat() {
   echo $1 >> ~/music/freestyle-beats/.yturls
 }
 
+ard() {
+  Ardour6 $1/$1.ardour
+}
+
 pk() {
   pgrep $1
   pgrep $1 | xargs -d"\n" kill
@@ -67,10 +71,10 @@ fi
   
 
 # pip virtualenv stuff
-export WORKON_HOME=$HOME/.virtualenvs
-VIRTUALENVWRAPPER_PYTHON=$(which python3)
-source $HOME/.local/bin/virtualenvwrapper.sh
-export PYTHONPATH="/home/allan/code/imgutils/utils.py"
+#export WORKON_HOME=$HOME/.virtualenvs
+#VIRTUALENVWRAPPER_PYTHON=$(which python3)
+#source $HOME/.local/bin/virtualenvwrapper.sh
+#export PYTHONPATH="/home/allan/code/imgutils/utils.py"
 
 ######################################################################
 ################# PREDIFINED STUFF ###################################
