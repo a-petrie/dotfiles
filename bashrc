@@ -211,4 +211,3 @@ alias inp='cd "$ACCOUNTS_DRIVE/In Progress"'
 
 
 eval "$(starship init bash)"
-

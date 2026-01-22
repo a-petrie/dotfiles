@@ -27,9 +27,6 @@ export UTILS_DIR=$HOME"/util-scripts"
 
 force_color_prompt=yes
 
-# prompt format
-PS1='\[\033[037m\]\u@\h\[\033[00m\]:\W> '
-
 na () {
     read -p "Enter alias name: " name
     read -p "Enter alias command: " cmd
@@ -79,4 +76,3 @@ clear_conan_remotes() {
 }
 
 eval "$(starship init bash)"
-
