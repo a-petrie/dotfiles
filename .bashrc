@@ -31,12 +31,6 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-na () {
-    read -p "Enter alias name: " name
-    read -p "Enter alias command: " cmd
-    echo "alias $name='$cmd'" >> ~/.bash_aliases
-}
-
 sapti () {
   sudo apt install $1
 }
