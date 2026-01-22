@@ -122,8 +122,3 @@ nnoremap <leader>cc ^xx
 " Exist out of insert mode with double tap of direction
 inoremap jj <ESC>j
 inoremap kk <ESC>k
-
-" Auto-run init script when saving a dotfile
-autocmd BufWritePost ~/dotfiles/* !bash init.sh
-
-

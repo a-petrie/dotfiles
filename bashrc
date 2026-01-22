@@ -11,10 +11,6 @@ sapti () {
   sudo apt install $1
 }
 
-pf () {
-  python3 ~/l5_dissertation/src/plots/plot_fit.py $1
-}
-
 xdg() {
   xdg-open $1
 }
@@ -23,23 +19,9 @@ newbeat() {
   echo $1 >> ~/music/freestyle-beats/.yturls
 }
 
-ard() {
-  Ardour6 $1/$1.ardour
-}
-
 pk() {
   pgrep $1
   pgrep $1 | xargs -d"\n" kill
-}
-
-newlv2() {
-  bash ~/code/templates/lv2/newLV2.sh $1 $2
-  cd $1
-  ls
-}
-
-pdb() {
-  python3 -m pdb $1
 }
 
 nwp () {
@@ -174,17 +156,6 @@ alias sl='ls'
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-
-# enable programmable completion features (you don't need to enable
-# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
-# sources /etc/bash.bashrc).
-if ! shopt -oq posix; then
-  if [ -f /usr/share/bash-completion/bash_completion ]; then
-    . /usr/share/bash-completion/bash_completion
-  elif [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
-  fi
-fi
 
                                                                 
 print_pdf() {
