@@ -57,8 +57,6 @@ tnb () {
 
 export PATH="$HOME/.local:$PATH"
 
-eval "$(starship init bash)"
-
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
@@ -189,4 +187,28 @@ if ! shopt -oq posix; then
 fi
 
                                                                 
+print_pdf() {
+    PRINTER="Brother HL-L8260CDW series Printer" 
+    /mnt/c/Users/accou/AppData/Local/SumatraPDF/SumatraPDF.exe -print-to "$PRINTER" "$1"
+}
+
+alias joinpdf='pdfunite *.pdf combined.pdf'
+
+printall() {
+    joinpdf
+    print_pdf combined.pdf
+    rm combined.pdf
+    mv *.pdf "To File"
+}
+
+BASHRC="$HOME/.bashrc"
+ACCOUNTS_DRIVE="/mnt/g/Shared drives/Z drive/Accounts"
+
+alias brc='vim $BASHRC'
+alias sa='source $BASHRC'
+alias accounts='cd "$ACCOUNTS_DRIVE"'
+alias inp='cd "$ACCOUNTS_DRIVE/In Progress"'
+
+
+eval "$(starship init bash)"
 
