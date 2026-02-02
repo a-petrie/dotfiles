@@ -73,7 +73,7 @@ set background=dark
 " REMAPPING WINDOW COMMANDS
 nnoremap <leader>vv :wincmd v<CR>
 nnoremap <leader>ss :split<CR>
-nnoremap <leader>t :terminal<CR> 
+nnoremap <leader>t :terminal<CR>
 nnoremap <leader>vrc :sp ~/.config/nvim/init.vim<CR>
 nnoremap <leader>brc :sp ~/.bashrc<CR>
 
@@ -203,6 +203,8 @@ function! RunClangFormat()
    execute 'silent !clang-format -i' shellescape(l:current_file)
 endfunction
 
+autocmd BufWritePre * %s/\s\+$//e " strip whitespace
+
 augroup Formatting
     autocmd!
     autocmd BufWritePost :%s/\t/    /g
@@ -215,3 +217,4 @@ nnoremap <leader>sf ggjVG:sort<CR>
 nnoremap <leader>sip vip:sort<CR>
 nnoremap <leader>so :%sort<CR>
 
+nnoremap <leader>rt :!make run-test<CR>
